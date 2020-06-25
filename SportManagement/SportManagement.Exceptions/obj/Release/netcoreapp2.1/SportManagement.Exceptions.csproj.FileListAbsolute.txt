@@ -1,0 +1,8 @@
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Exceptions\bin\Release\netcoreapp2.1\SportManagement.Exceptions.deps.json
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Exceptions\bin\Release\netcoreapp2.1\SportManagement.Exceptions.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Exceptions\bin\Release\netcoreapp2.1\SportManagement.Exceptions.pdb
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Exceptions\obj\Release\netcoreapp2.1\SportManagement.Exceptions.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Exceptions\obj\Release\netcoreapp2.1\SportManagement.Exceptions.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Exceptions\obj\Release\netcoreapp2.1\SportManagement.Exceptions.AssemblyInfo.cs
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Exceptions\obj\Release\netcoreapp2.1\SportManagement.Exceptions.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Exceptions\obj\Release\netcoreapp2.1\SportManagement.Exceptions.pdb

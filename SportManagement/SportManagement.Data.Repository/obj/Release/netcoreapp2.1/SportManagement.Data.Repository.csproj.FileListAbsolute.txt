@@ -1,0 +1,14 @@
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\bin\Release\netcoreapp2.1\SportManagement.Data.Repository.deps.json
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\bin\Release\netcoreapp2.1\SportManagement.Data.Repository.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\bin\Release\netcoreapp2.1\SportManagement.Data.Repository.pdb
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\bin\Release\netcoreapp2.1\SportManagement.Data.DataAccess.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\bin\Release\netcoreapp2.1\SportManagement.Data.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\bin\Release\netcoreapp2.1\SportManagement.Data.DataAccess.pdb
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\bin\Release\netcoreapp2.1\SportManagement.Data.pdb
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\obj\Release\netcoreapp2.1\SportManagement.Data.Repository.csprojAssemblyReference.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\obj\Release\netcoreapp2.1\SportManagement.Data.Repository.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\obj\Release\netcoreapp2.1\SportManagement.Data.Repository.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\obj\Release\netcoreapp2.1\SportManagement.Data.Repository.AssemblyInfo.cs
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\obj\Release\netcoreapp2.1\SportManagement.Data.Repository.csproj.CopyComplete
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\obj\Release\netcoreapp2.1\SportManagement.Data.Repository.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data.Repository\obj\Release\netcoreapp2.1\SportManagement.Data.Repository.pdb

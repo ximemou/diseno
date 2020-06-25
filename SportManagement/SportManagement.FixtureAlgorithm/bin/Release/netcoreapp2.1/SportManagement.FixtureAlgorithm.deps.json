@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "SportManagement.FixtureAlgorithm/1.0.0": {
+        "dependencies": {
+          "SportManagement.Data": "1.0.0"
+        },
+        "runtime": {
+          "SportManagement.FixtureAlgorithm.dll": {}
+        }
+      },
+      "SportManagement.Data/1.0.0": {
+        "runtime": {
+          "SportManagement.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SportManagement.FixtureAlgorithm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SportManagement.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

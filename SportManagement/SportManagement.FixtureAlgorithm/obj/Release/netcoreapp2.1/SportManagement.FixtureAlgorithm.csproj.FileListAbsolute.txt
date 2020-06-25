@@ -1,0 +1,12 @@
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\bin\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.deps.json
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\bin\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\bin\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.pdb
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\bin\Release\netcoreapp2.1\SportManagement.Data.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\bin\Release\netcoreapp2.1\SportManagement.Data.pdb
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\obj\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.csprojAssemblyReference.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\obj\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\obj\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\obj\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.AssemblyInfo.cs
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\obj\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.csproj.CopyComplete
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\obj\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.FixtureAlgorithm\obj\Release\netcoreapp2.1\SportManagement.FixtureAlgorithm.pdb

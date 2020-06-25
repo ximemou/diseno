@@ -1,0 +1,9 @@
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data\bin\Release\netcoreapp2.1\SportManagement.Data.deps.json
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data\bin\Release\netcoreapp2.1\SportManagement.Data.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data\bin\Release\netcoreapp2.1\SportManagement.Data.pdb
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data\obj\Release\netcoreapp2.1\SportManagement.Data.csprojAssemblyReference.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data\obj\Release\netcoreapp2.1\SportManagement.Data.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data\obj\Release\netcoreapp2.1\SportManagement.Data.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data\obj\Release\netcoreapp2.1\SportManagement.Data.AssemblyInfo.cs
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data\obj\Release\netcoreapp2.1\SportManagement.Data.dll
+\\Mac\Home\Documents\GitHub\OBL-175660\SportManagement\SportManagement.Data\obj\Release\netcoreapp2.1\SportManagement.Data.pdb

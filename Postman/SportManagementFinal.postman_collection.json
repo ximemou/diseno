@@ -1,0 +1,1741 @@
+{
+	"info": {
+		"_postman_id": "e18d69fd-7e76-4174-8550-d0e168b9ba17",
+		"name": "SportManagement Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Teams",
+			"item": [
+				{
+					"name": "crear equipo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Welcome\",\n\t\"SportId\":4\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear equipo 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear equipo a deporte que no existe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n \"Name\":\"Tiger woods\",\n \"SportId\":10\n\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener equipo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/teams/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"teams",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener equipos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar equipo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/teams/26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"teams",
+								"26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar equipo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc3NzI1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.mxZAn3Uimc14gPMT77jDRKn7TcIJxq1fgxDY-w9ylWk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"Real madrid 2\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/teams/27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"teams",
+								"27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar una imagen a un equipo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibGFzdXNhbmEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTg0MDIxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9._WXf2pUbgnYTuuDMM5kiQmduwEPWCMB_QR2ZGd_VX90",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/teams/14/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"teams",
+								"14",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar imagen a equipo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTg2ODY4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.xHbkh2ZiOtRMK7r0qEQioSI3zCWEuXISD9T-0WHbHbE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"value": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/teams/4/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"teams",
+								"4",
+								"image"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "obtener usuarios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Name\":\"Marcelo\",\n  \"LastName\":\"Rodriguez\",\n  \"UserName\":\"marceloro\",\n  \"Password\":\"12345\",\n  \"Email\":\"marceloro@hotmail.com\",\n  \"IsAdministrator\":true\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"users"
+							]
+						},
+						"description": "get token"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear usuario con mail invalido",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n    \"Name\": \"Red sox\",\n    \"SportId\":11\n    \n    \n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar equipos favoritos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibGFzdXNhbmEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc5NTkzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.as-JnOoK0XyF6jHrhXAiofVuFm4QJeZ8sV9c4kAa44I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{ \"TeamId\":20},\n\t\t{ \"TeamId\":15},\n\t\t\t{ \"TeamId\":19},\n\t\t\t{ \"TeamId\":22}\n]"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/users/6/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"users",
+								"6",
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dejar de seguir equipo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/users/3/teams/25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"users",
+								"3",
+								"teams",
+								"25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc3NzI1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.mxZAn3Uimc14gPMT77jDRKn7TcIJxq1fgxDY-w9ylWk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"Marcelo\",\n\t\"LastName\":\"Rodriguez\",\n\t\"UserName\":\"marcelito\",\n\t\"Email\":\"marcel@gmail.com\",\n\t\"Password\":\"12345\",\n\t\"IsAdministrator\":false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc3NzI1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.mxZAn3Uimc14gPMT77jDRKn7TcIJxq1fgxDY-w9ylWk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Name\":\"Susana\",\n  \"LastName\":\"Silva\",\n  \"UserName\":\"lasusana\",\n  \"Password\":\"12345\",\n  \"Email\":\"susilva@hotmail.com\",\n  \"IsAdministrator\":true\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc3NzI1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.mxZAn3Uimc14gPMT77jDRKn7TcIJxq1fgxDY-w9ylWk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/users/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"users",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sports",
+			"item": [
+				{
+					"name": "crear deporte",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n  \"Name\":\"Rugby\",\n\n  \n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/sports",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"sports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear deporte con nombre ya existe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n  \"Name\":\"Rugby\"\n\n  \n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/sports",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"sports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear deporte beisbol",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n  \"Name\":\"Beisbol\"\n\n\n  \n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/sports",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"sports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener deportes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/sports",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"sports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener un deporte",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/sports/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"sports",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener deporte que no existe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/sports/25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"sports",
+								"25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar deporte",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"Natacion en equipos\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/sports/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"sports",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar deporte",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTczMzE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.ZK8trGFEJSwSsHAni5f9ys7sB-9MakOI9Nn4gUt64vM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/sports/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"sports",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener todos los equipos en un deporte",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"Date\": \"2018-12-09 22:00\",\n\"LocalTeamId\":14,\n\"VisitingTeamId\":7,\n\"SportId\":4\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Games",
+			"item": [
+				{
+					"name": "crear partido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear partido en fecha en que ya hay partido",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"Date\": \"2018-12-09 22:00\",\n\"LocalTeamId\":14,\n\"VisitingTeamId\":7,\n\"SportId\":4\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games"
+							]
+						},
+						"description": "muestra mensaje de que no se puede"
+					},
+					"response": []
+				},
+				{
+					"name": "crear partido con fecha en formato incorrecto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"Date\": \"2018-12/09 2:00\",\n\"LocalTeamId\":14,\n\"VisitingTeamId\":7,\n\"SportId\":4\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener partido",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games/89",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games",
+								"89"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar partido",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar partido",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"Date\": \"2018-12-28 22:00\",\n\"LocalTeamId\":17,\n\"VisitingTeamId\":15,\n\"SportId\":4\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games/107",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games",
+								"107"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener partidos para un equipo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games/team/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games",
+								"team",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener partidos para un deporte",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games/sport/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games",
+								"sport",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generar partidos algoritmo todos contra todos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"DateAndTime\":\"2019-02-21 20:00\",\n\t\"SportId\":11,\n\t\"Algorithm\":\"Todos contra todos\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games/algorithm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games",
+								"algorithm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generar partidos con algortimo al azar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc1NTM1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.GwMygjJyf1qxO4D4uXKTO8Ha8HohWxfBT3yuOyypiig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"DateAndTime\":\"2019-01-11 20:00\",\n\t\"SportId\":6,\n\t\"Algorithm\":\"Al azar\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/games/algorithm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"games",
+								"algorithm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "crear comentario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibGFzdXNhbmEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTgwNDY2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.lret7Nqpsc-QgGma4YwttsN7CDsH6NR0qBdx9EX5sVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Text\":\"woooooooow\",\n\t\"GameId\":97,\n\t\"UserId\":6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener comentarios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc3NzI1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.mxZAn3Uimc14gPMT77jDRKn7TcIJxq1fgxDY-w9ylWk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener comentarios de un partido",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc3NzI1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.mxZAn3Uimc14gPMT77jDRKn7TcIJxq1fgxDY-w9ylWk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/comments/game/89",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"comments",
+								"game",
+								"89"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener comentarios de un usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc3NzI1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.mxZAn3Uimc14gPMT77jDRKn7TcIJxq1fgxDY-w9ylWk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/comments/user/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"comments",
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener comentarios de un usuario para un partido",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc3NzI1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.mxZAn3Uimc14gPMT77jDRKn7TcIJxq1fgxDY-w9ylWk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/comments/user/2/game/89",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"comments",
+								"user",
+								"2",
+								"game",
+								"89"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener comentarios de los equipos que el usuario sigue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTc3NzI1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.mxZAn3Uimc14gPMT77jDRKn7TcIJxq1fgxDY-w9ylWk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/comments/game/user/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"comments",
+								"game",
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LogIn",
+			"item": [
+				{
+					"name": "obtener token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UserName\":\"juanm\",\n\t\"Password\":\"12345\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:2808/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2808",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoianVhbm0iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiZXhwIjoxNTM5MTUxNDM4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI4MDgvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyODA4LyJ9.tMvvaJN5PdINWoNbURr3_LRpU6-PT_Mrv9dnKQQlEAM",
+				"type": "string"
+			}
+		]
+	}
+}
